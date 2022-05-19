@@ -1,0 +1,169 @@
+/* Util */
+.full-width {
+  width: 100%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Button */
+.btn-root {
+  border: none;
+  padding: 4px 8px;
+  min-height: 32px;
+  font-size: 15px;
+  line-height: 17px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: var(--font-primary);
+}
+
+.icon-btn-root {
+  padding: 16px;
+  min-height: 48px;
+  min-width: 48px;
+}
+
+.btn-root > svg {
+  margin: 0px 8px;
+}
+
+.btn-primary {
+  color: var(--color-text-white);
+  background-color: var(--color-secondary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary);
+}
+
+/* Input */
+.input-root {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+}
+
+.input-root > label {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.input-light > label > svg {
+  margin-right: 4px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.input-dark > label > svg {
+  margin-right: 4px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.input-root > input:focus-visible + label,
+.input-root > textarea:focus-visible + label,
+.input-root > input:focus-visible + label > svg,
+.input-root > textarea:focus-visible + label > svg {
+  color: var(--color-primary);
+}
+
+.input-root > label:focus {
+  color: var(--color-primary);
+}
+
+.input-root > input:focus-visible,
+.input-root > textarea:focus-visible {
+  outline: none;
+}
+
+.input-standard > input,
+.input-standard > textarea {
+  border: none;
+  border-bottom: 1px solid var(--color-secondary);
+}
+
+.input-standard > input:focus-visible,
+.input-standard > textarea:focus-visible {
+  border: none;
+  border-bottom: 1.5px solid var(--color-primary);
+}
+
+.input-outlined > input,
+.input-outlined > textarea {
+  border: 1px solid var(--color-secondary);
+}
+
+.input-outlined > input:focus-visible,
+.input-outlined > textarea:focus-visible {
+  border: 1.5px solid var(--color-primary);
+}
+
+.input-light > label {
+  color: var(--color-text-black);
+}
+
+.input-light > input,
+.input-light > textarea {
+  background-color: var(--color-white);
+  color: var(--color-text-black);
+}
+
+.input-dark > label {
+  color: var(--color-text-white);
+}
+
+.input-dark > input,
+.input-dark > textarea {
+  background-color: var(--color-default);
+  color: var(--color-text-white);
+}
+
+/* SearchBar */
+.input-searchbar {
+  display: flex;
+  flex-direction: row-reverse;
+  border-radius: 16px;
+  height: 22px;
+  background: var(--color-default);
+  color: #fff;
+}
+
+.input-searchbar:hover > .search-input,
+.input-searchbar:hover > .input-searchbar-icon {
+  opacity: 1;
+}
+
+.search-input {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  flex-grow: 1;
+  opacity: 0.6;
+  transition: opacity 0.5s ease-out;
+}
+
+.search-input::placeholder,
+.search-input::-ms-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.search-input:focus-visible {
+  outline: none;
+  opacity: 1;
+}
+
+.search-input:active {
+  opacity: 1;
+}
+
+.input-searchbar-icon {
+  padding: 2px 8px;
+  width: 16px;
+  height: 16px;
+  color: #fff;
+  opacity: 0.6;
+  transition: opacity 0.5s ease-out;
+}
